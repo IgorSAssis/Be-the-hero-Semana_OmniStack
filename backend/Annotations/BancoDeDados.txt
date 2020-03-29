@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------
+Biblioteca knex
+
+-> Foi utilizado o Query builder.
+
+
+PAREI NO COMANDO NPX KNEX INIT

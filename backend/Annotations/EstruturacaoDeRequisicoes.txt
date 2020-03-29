@@ -1,0 +1,5 @@
+// request.headers = cabeçalho que guarda informações do contexto de uma requisição, e geralmente
+                     traz dados da autenticação do usuário, da localização(verificar o idioma).
+
+Metodologia MVC: dentro de um controller só deve ter mais do que 5 métodos (listagem, criação, retornar um unico item, alteração e deletar);
+

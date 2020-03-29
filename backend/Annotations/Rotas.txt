@@ -1,0 +1,32 @@
+-> Recursos: caminhos presentes dentro de uma rota;
+             Ex: localhost:3333/users <- recurso
+
+->Rotas: Conjunto de todos os recursos.
+
+------------------------------------------------------------------------------
+Métodos HTTP:
+
+GET: busca uma informação do back-end.
+POST: cria uma informação no back-end.
+PUT: altera uma informação no back-end.
+DELETE: deleta uma informação no back-end.
+
+------------------------------------------------------------------------------
+Tipos de parâmetros:
+
+Query params: São parâmetros nomeados que são enviados na rota após o simbolo de 
+       '?' e geralmente servem para fazer filtros, paginação
+       Ex: localhost:3333/users?name:"Igor"&page=2
+       Como usar: const params = request.query;
+
+
+Route params: parâmetros usados para identificar recursos.
+              Ex: localhost:3333/users/:identificar
+              Como usar: const params = request.params;
+
+Request body: Corpo da requisição utilizado para criar ou alterar recursos.
+              Como usar: const params = request.body;
+              Definir antes da criação de cada rota: 
+              app.use(express.json());
+
+
