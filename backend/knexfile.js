@@ -1,5 +1,7 @@
+// Update with your config settings.
+
 module.exports = {
-//Ambiente usado pelo time de desenvolvimento
+
   development: {
     client: 'sqlite3',
     connection: {
@@ -10,8 +12,7 @@ module.exports = {
     },
     useNullAsDefault: true,
   },
-//Ambiente de produção para o time de desenvolvimento, que simula a produção para que o time de dev
-//possa testar a aplicação
+
   staging: {
     client: 'postgresql',
     connection: {
@@ -27,7 +28,7 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   },
-//Ambiente de produção, usado quando a aplicação for jogada na internet para que algum cliente possa acessar
+
   production: {
     client: 'postgresql',
     connection: {
@@ -43,4 +44,5 @@ module.exports = {
       tableName: 'knex_migrations'
     }
   }
+
 };
